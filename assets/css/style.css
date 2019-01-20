@@ -1,5 +1,11 @@
+body{
+    background-color: black;
+}
+
 .jumbotron{
-    background-image: url(../images/modern-design-1157029.jpg)
+    background-image: url(../images/modern-design-1157029.jpg);
+    background-image: url(../images/backdrop.gif);
+    background-size: 100%;
 }
 
 .btn{
@@ -9,7 +15,9 @@
 img{
     height: 200px;
     width: 200px;
-}
+    border: 1px dotted #007bff;
+    border-radius: 10%;
+    }
 
 .gifDiv{
     float: left;
@@ -32,7 +40,8 @@ img{
 	font-family: "TooneyNoodleNF";
 	font-size: 150px;
 	margin-top: .5rem;
-	margin-bottom: .5rem;
+    margin-bottom: .5rem;
+    color: #0ff;
 }
 
 @font-face {
@@ -47,7 +56,8 @@ img{
 	font-family: "Subscribe";
 	font-size: 20px;
 	margin-top: .5rem;
-	margin-bottom: .5rem;
+    margin-bottom: .5rem;
+    color: rgb(5, 114, 114);
 }
 .btn {
     font-family: "Subscribe";
@@ -58,4 +68,5 @@ img{
 #gif-form{
     font-family: "Subscribe";
     font-size: 20px;
+    color: #0ff;
 }
