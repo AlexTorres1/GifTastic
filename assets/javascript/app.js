@@ -39,6 +39,7 @@ function displayGifButtons(){
   });
 
 $(document).on("click", ".btn-primary", function() {
+    $("#gifs-appear-here").empty();
     // Grabbing and storing the data-name property value from the button
     var gif = $(this).attr("data-name");
     // Constructing a queryURL using the gif name
@@ -73,10 +74,11 @@ $(document).on("click", ".btn-primary", function() {
           var gifImage = $("<img>");
 
           // Setting the src attribute of the image to a property pulled off the result item
-          gifImage.attr("src", results[i].images.fixed_height.url);
+          gifImage.attr("src", results[i].images.fixed_height_still.url);
           // gifImage.attr("src", results[i].images.fixed_height_still.url);
           gifImage.attr("data-still", results[i].images.fixed_height_still.url);
           gifImage.attr("data-animate", results[i].images.fixed_height.url);
+          // gifImage.attr("data-state", "still");
           
 
           // Appending the paragraph and image tag to the gifDiv

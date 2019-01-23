@@ -26,6 +26,7 @@ img{
 
 #gifPause{
     margin-top: .5rem;
+    color: white;
 }
 
 @font-face {
@@ -69,4 +70,7 @@ img{
     font-family: "Subscribe";
     font-size: 20px;
     color: #0ff;
+}
+p{
+    color:white;
 }
